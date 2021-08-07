@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-Page</title>
+    <link href="Resources/css/contact.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+      var slideimages = new Array(); // create new array to preload images
+      slideimages[0] = new Image(); // create new instance of image object
+      slideimages[0].src = "image1.png"; // set image src property to image path, preloading image in the process
+      slideimages[1] = new Image();
+      slideimages[1].src = "image2.jpg";
+      slideimages[2] = new Image();
+      slideimages[2].src = "image3.jpg";
+      slideimages[3] = new Image();
+      slideimages[3].src = "image4.jpg";
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-top">
+      <div class="logo-section">
+        <div class="logo">
+          <a href="index.html"><img src="Resources/images/logo.png" /></a>
+          <p class="name">NepFood</p>
+        </div>
+        <p>A Perfect Guide To Nepali Food |</p>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li class="items"><a href="index.html">Home</a></li>
+          <li class="items"><a href="#">Services</a></li>
+          <li class="items"><a href="#">About Us</a></li>
+          <li class="items" id="up-hover"><a href="#">Team</a></li>
+          <li class="items-main"><a href="#">Contact</a></li>
+        </ul>
+        <div class="down-hover" id="down-hov">
+          <ul class="down-items">
+            <li class="down-item"><a href="#">Members</a></li>
+            <li class="down-item"><a href="#">Suggest</a></li>
+            <li class="down-item"><a href="#">Help</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="big-photo">
+      <img src="image1.jpg" id="slide" alt="kitchen" />
+    </div>
+    <section class="body-page-1">
+      <ul>
+        <li class="second-nav"><a href="#">Food </a></li>
+        <li class="second-nav"><a href="#">Services </a></li>
+        <li class="second-nav"><a id="link">pages ></a></li>
+        <ul class="nested-list">
+          <li id="third-nav"><a href="gallery.html#Gallery">Gallery</a></li>
+          <li id="fourth-nav"><a href="#">Contact</a></li>
+        </ul>
+      </ul>
+      <div class="web-info">
+        <h1>Our little Kitchen</h1>
+        <p id="pri-text">
+          We are glad that you've come to visit our small website. Our this
+          mini-website represents small kitchen, that provides every procedure
+          of making foods, especially Nepali foods. We have lot of recipes and
+          dishes so that you don't get discouraged to learn some Nepali dishes.
+          For most important part, we have lots of photos and galleries, our
+          contact information and team members contact details as well. We have
+          our original content, promoting our Nepali culture and our own
+          heritage.
+        </p>
+        <p id="sec-text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint illo
+          dolorum deserunt, impedit labore animi consectetur ab quidem ratione
+          possimus temporibus dolor quisquam nam? Architecto saepe suscipit
+          commodi laboriosam repudiandae!Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Sint illo dolorum deserunt, impedit labore animi
+          consectetur ab quidem ratione possimus temporibus dolor quisquam nam?
+          Architecto saepe suscipit commodi laboriosam repudiandae!
+        </p>
+        <input id="button" type="button" value="->" />
+      </div>
+      <div class="slider">
+        <img src="photo0.jpg" id="button-switch" />
+        <input type="button" id="but" value="Next->" />
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contact">
+        <h1>Contact us</h1>
+        <form class="contact-form" name="myform" onsubmit="return(validate())">
+          <label for="name">Full Name: </label><br />
+          <input type="text" name="type" id="name" placeholder="Name" />
+          <input type="text" name="type" id="name" placeholder="Surname" />
+          <br />
+          <label for="type2">Email Address:</label><br />
+          <input
+            type="email"
+            name="type2"
+            id="type2"
+            placeholder="abc@email.com"
+          />
+          <br />
+          <label for="type3">Phone Number:</label><br />
+          <input
+            type="number"
+            name="type3"
+            id="type3"
+            placeholder="xxxx-xxx-xxx"
+          />
+          <br />
+          Country:<br />
+          <select name="opt" id="opt">
+            <option value="1">USA</option>
+            <option value="2">China</option>
+            <option value="3">India</option>
+            <option value="4">Nepal</option>
+            <option value="5">Bangladesh</option>
+            <option value="6">Maldives</option>
+            <option value="7">Sri-lanka</option>
+            <option value="8">Bhutan</option>
+            <option value="9">Pakistan</option>
+            <option value="10">Afghanistan</option>
+          </select>
+          <br />
+          <label for="type4">Message:</label><br />
+          <textarea
+            cols="44"
+            rows="14"
+            for="area"
+            id="message"
+            placeholder="Enter the message"
+          ></textarea>
+          <br />
+          <input id="submit" type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+    <section class="Email-send">
+      <article class="box-email">
+        <form class="news" action="blank_">
+          Email:
+          <br />
+          <input type="email" class="news-input" />
+          <p class="send-words">
+            Get updates on every messages and daily products links. We value
+            your privacy and send regular email to our services and help you to
+            realize this website as number one for Nepali food and international
+            recipes as well.
+          </p>
+          <input type="submit" class="news-submit" />
+          <a class="anchor-email" href="mailto:subodhacharya21@gmail.com"
+            >Send me more information</a
+          >
+        </form>
+      </article>
+    </section>
+    <script type="text/javascript" src="Resources/script.js"></script>
+  </body>
+</html>
